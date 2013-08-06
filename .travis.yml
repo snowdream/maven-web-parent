@@ -1,0 +1,17 @@
+language: java
+
+jdk:
+  # optional,you can choose one or more JDKs.
+  # To test against multiple JDKs, use the jdk: key in .travis.yml.
+  - oraclejdk7
+  - openjdk7
+  - openjdk6
+  
+branches:
+  excludes:
+    - gh-pages
+
+notifications:
+  email: false  
+   
+script: echo Finish
