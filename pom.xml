@@ -114,6 +114,7 @@
 		<nexus.staging.maven.plugin.version>1.4.5</nexus.staging.maven.plugin.version>
 		<org.springframework.version>3.2.3.RELEASE</org.springframework.version>
 		<org.springframework.security.version>3.1.4.RELEASE</org.springframework.security.version>
+		<org.springframework.security.oauth.version>1.0.0.M4</org.springframework.security.oauth.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -256,6 +257,13 @@
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-config</artifactId>
 				<version>${org.springframework.security.version}</version>
+			</dependency>
+
+			<!-- SPRING SECURITY OAUTH -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth</artifactId>
+				<version>${org.springframework.security.oauth.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
